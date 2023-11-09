@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ponyo Video Options</title>
+
+<style type="text/css">
+
+	a
+	{
+		color:#CCCCCC;
+		text-decoration:none;
+		font-family:Arial, Helvetica, sans-serif;
+		
+	}
+
+	a:hover
+	{
+		color:#FFFFFF;
+		text-decoration:none;
+		
+	}
+	
+	<!--#disclaimerInfo,#disclaimerInfo a,#disclaimerInfo a:hover {color:#FFFFFF;font:10px verdana,arial,helvetica,sans-serif;}-->
+	.disclaimerStyle{
+		position:absolute;
+		float:left;
+		top:0;
+		left:0;
+		width:300px;
+		min-width:300px;
+		overflow:hidden;
+		font:11px arial,helvetica;
+		color:#FFFFFF;
+		background:#003366;
+		padding:3px;
+		border:1px solid #000;
+		text-align:center;
+		}
+
+	
+</style>
+
+<script language="javascript" src="files/js/popwindow.js"></script>
+<script language="javascript" src="files/js/qtobject.js"></script>
+
+<script language="javascript">
+
+	function handleMovieClick(m)
+	{
+		//alert(m);
+		//document.location = "videos.html?videoId="+m;
+		//popWindow("videos.html?videoId="+m,'792','749','false');
+		document.location.href = "videos.html?videoId="+m;
+	}
+	
+	function handleIpod(q)
+	{
+		document.location.href = "http://wdmp.rd.llnwd.net/wdsmp/Ponyo/Trailer1/General/Ponyo_InternetTrailer_General_iPod.m4v.zip";
+	}
+	
+</script>
+
+<script language="javascript" src="files/js/quicktime.js"></script>
+
+
+</head>
+
+<body background="files/html/videoOptionsBg.jpg" style="background-repeat:no-repeat" onload="window.resizeTo('651','685');" bgcolor="#000000">
+
+<div style="position:absolute;top:0;left:-110px;"><iframe src="hidef.html" name="hidef" id="hidef" width="100" height="100" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+
+
+<div class="disclaimerStyle" style="z-index:10;position:absolute;left:320px;top:500px;display:none" id="disclaimer"><table width="100%" border="0" cellpadding="2" cellspacing="0"><tr align="center"><td id="disclaimerInfo" style="color:#FFFFFF;">Please be aware that you are about to leave Disney Online and different terms of use and privacy policy will apply.</td></tr></table></div>
+
+
+<a href="javascript: self.close ()" style="position:absolute; top:0px; left:540px;"><img src="files/html/closeBtn.jpg" border="0" /></a>
+
+
+<a id="qLow"   href="javascript:handleMovieClick('qLow')" style="position:absolute; left:243px; top:321px; 	font-size:18px">LOW</a>
+<a id="qHigh"  href="javascript:handleMovieClick('qHigh')" style="position:absolute; left:303px; top:321px; font-size:18px">HIGH</a>
+<a id="qIpod"  href="javascript:handleIpod('qIpod')" style="position:absolute; left:365px; top:321px; font-size:18px">IPOD</a>
+
+
+<a id="qLow"   href="javascript:handleMovieClick('mLow')" style="position:absolute; left:275px; top:397px; font-size:18px;">LOW</a>
+<a id="qHigh"  href="javascript:handleMovieClick('mHigh')" style="position:absolute; left:330px; top:397px; font-size:18px;">HIGH</a>
+
+<!---->
+<a id="hd480"  href="highdef.html?hidef=480&type=trailer" target="hidef" style="position:absolute; left:260px; top:478px; font-size:18px;">480</a> 
+<a id="hd720"  href="highdef.html?hidef=720&type=trailer" target="hidef" style="position:absolute; left:307px; top:478px; font-size:18px;">720</a>
+<a id="hd1080" href="highdef.html?hidef=1080&type=trailer" target="hidef" style="position:absolute; left:353px; top:478px; font-size:18px;">1080</a>
+
+
+<a href="http://www.microsoft.com/windows/windowsmedia/player/download/download.aspx" onmouseover="getElementById('disclaimer').style.display='block'" onmouseout="getElementById('disclaimer').style.display='none'" style="position:absolute; top:560px; left:365px;" target="_blank"><img src="files/html/windowsBtn.jpg" border="0" /></a>
+<a href="http://www.apple.com/quicktime/download/" onmouseover="getElementById('disclaimer').style.display='block'" onmouseout="getElementById('disclaimer').style.display='none'" style="position:absolute; top:560px; left:460px;" target="_blank"><img src="files/html/quicktimeBtn.jpg" border="0" /></a>
+
+
+</body>
+</html>
